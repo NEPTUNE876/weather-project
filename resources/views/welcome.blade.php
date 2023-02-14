@@ -27,6 +27,11 @@
             }
         }
     </script>
+    <style>
+        .col-2 {
+            align-items: center;
+        }
+    </style>
     <style type="text/tailwindcss">
         @layer utilities {
             .content-auto {
@@ -52,13 +57,70 @@
             </div>
             <div>icon</div>
         </div>
-
         <ul class="future-weather dark:bg-gray-800 px-4 py-6 space-y-8">
             <li class="items-center">
                 <div class="row">
                     <div class="col-2 text-gray-400">TUE</div>
-                    <div class="col-8 flex-items-center">
+                    <div class="col-1 flex-items-center">
                         <div>icon</div>
+                    </div>
+                    <div class="col-7 flex-items-center">
+                        <div>Clear Sky</div>
+                    </div>
+                    <div class="col-2 text-right text-xs">
+                        <div>4&#176;C</div>
+                        <div>4&#176;C</div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-2 text-gray-400">TUE</div>
+                    <div class="col-1 flex-items-center">
+                        <div>icon</div>
+                    </div>
+                    <div class="col-7 flex-items-center">
+                        <div>Clear Sky</div>
+                    </div>
+                    <div class="col-2 text-right text-xs">
+                        <div>4&#176;C</div>
+                        <div>4&#176;C</div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-2 text-gray-400">TUE</div>
+                    <div class="col-1 flex-items-center">
+                        <div>icon</div>
+                    </div>
+                    <div class="col-7 flex-items-center">
+                        <div>Clear Sky</div>
+                    </div>
+                    <div class="col-2 text-right text-xs">
+                        <div>4&#176;C</div>
+                        <div>4&#176;C</div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-2 text-gray-400">TUE</div>
+                    <div class="col-1 flex-items-center">
+                        <div>icon</div>
+                    </div>
+                    <div class="col-7 flex-items-center">
+                        <div>Clear Sky</div>
+                    </div>
+                    <div class="col-2 text-right text-xs">
+                        <div>4&#176;C</div>
+                        <div>4&#176;C</div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-2 text-gray-400">TUE</div>
+                    <div class="col-1 flex-items-center">
+                        <div>icon</div>
+                    </div>
+                    <div class="col-7 flex-items-center">
                         <div>Clear Sky</div>
                     </div>
                     <div class="col-2 text-right text-xs">
