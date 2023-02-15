@@ -11,7 +11,7 @@
                     </div>
                     <div class="ml-5">
                         <div class="font-semibold">{{ucfirst($currentWeather['weather'][0]['description'])}}</div>
-                        <div class="text-gray-400">Colchester, England</div>
+                        <div class="text-gray-400">Colchester, UK</div>
                     </div>
                 </div>
                 <div class="absolute right-0 mr-2 bottom-0 mt-10" style="margin-top: -5px">
@@ -25,9 +25,11 @@
             @foreach($futureWeather['list'] as $weather )
                 <li class="items-center">
                     <div class="row">
-                        <div class="col-2 text-gray-400">{{strtoupper(\Carbon\Carbon::createFromTimestamp($weather['dt'])->format('D @ H:i')) }}</div>
+                        <div
+                            class="col-2 text-gray-400">{{strtoupper(\Carbon\Carbon::createFromTimestamp($weather['dt'])->format('D @ H:i')) }}</div>
                         <div class="col-3 ">
-                            <img src="http://openweathermap.org/img/wn/{{$weather['weather'][0]['icon']}}@4x.png"  style="transform: translateY(-40px);" alt="icon"/>
+                            <img src="http://openweathermap.org/img/wn/{{$weather['weather'][0]['icon']}}@4x.png"
+                                 style="transform: translateY(-40px);" alt="icon"/>
                         </div>
                         <div class="col-5 flex-items-center">
                             <div>{{ucfirst($weather['weather'][0]['description'])}}</div>
