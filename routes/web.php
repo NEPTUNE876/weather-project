@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $location = 'Colchester, UK';
+    $apiKey = env('API_KEY');
+    $response = \Illuminate\Support\Facades\Http::get("https://api.openweathermap.org/data/2.5/weather?q={$location}&appid={$apiKey}&units=metric");
+    $responseFuture = \Illuminate\Support\Facades\Http::get("https://api.openweathermap.org/data/2.5/forecast?q={$location}&cnt=5&appid={$apiKey}&units=metric");
+    return view('welcome', [
+        'currentWeather' => $response->json(),
+        'futureWeather' => $responseFuture->json(),
+    ]);
 });
