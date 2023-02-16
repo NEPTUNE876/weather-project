@@ -22,7 +22,22 @@ Route::get('/', function () {
     return view('welcome', [
 
         'currentWeather' => $response->json(),
+
         'futureWeather' => $responseFuture->json(),
 
+    ]);
+});
+
+
+
+Route::get('/countries', function () {
+
+    $country = 'Ireland';
+    $response = \Illuminate\Support\Facades\Http::get("https://restcountries.com/v3.1/name/{$country}?fullText=true");
+    dump($response->json());
+
+
+    return view('countries', [
+        'countryInfo' => $response->json(),
     ]);
 });

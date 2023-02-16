@@ -364,7 +364,12 @@ video {
         --tw-text-opacity: 1;
         color: rgb(107 114 128 / var(--tw-text-opacity))
     }
-
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 
 }
 
